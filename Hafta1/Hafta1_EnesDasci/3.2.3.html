@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<!--- 5 günlük 4 odalı ottel rezervasyon sayfası, bazı odalar birden fazla rezerv bazı günler tüm otel kapalı, boş ve dolu odaları farklı şekilde belirt -->
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Otel Rezervasyon</title>
+</head>
+
+<body>
+    <h1>Otel Rezervasyon Takvimi</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Oda / Gün</th>
+                <th>Pzt</th>
+                <th>Sal</th>
+                <th>Çar</th>
+                <th>Per</th>
+                <th>Cum</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Oda 101</th>
+                <td>Boş</td>
+                <td colspan="2">Dolu</td>
+                <td>Boş</td>
+                <td>Boş</td>
+            </tr>
+            <tr>
+                <th>Oda 102</th>
+                <td rowspan="2">Kapalı</td>
+                <td>Boş</td>
+                <td>Boş</td>
+                <td>Dolu</td>
+                <td>Boş</td>
+            </tr>
+            <tr>
+                <th>Oda 103</th>
+                <td>Dolu</td>
+                <td>Boş</td>
+                <td>Boş</td>
+                <td>Dolu</td>
+            </tr>
+            <tr>
+                <th>Oda 104</th>
+                <td>Boş</td>
+                <td>Boş</td>
+                <td colspan="3">Dolu</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

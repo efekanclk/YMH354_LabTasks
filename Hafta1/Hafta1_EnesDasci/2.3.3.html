@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<!--Responsive Resim (picture)-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Picture</title>
+</head>
+
+<body>
+    <h1>Responsive Resim (picture)</h1>
+
+    <picture>
+        <source media="(max-width: 600px)" srcset="https://picsum.photos/seed/small/400/250" />
+        <source media="(max-width: 1000px)" srcset="https://picsum.photos/seed/medium/700/400" />
+        <img src="https://picsum.photos/seed/large/1000/600" alt="Responsive" width="500" />
+    </picture>
+
+    <p>Ekran küçüldükçe farklı resim kaynakları devreye girer.</p>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!-- 
+    Aşama 1: 
+    Ad-Soyad: Efekan Çelik
+    Okul Numarası: 23291471
+    Yaş: 20
+    Rol: 3. Sınıf Yazılım Mühendisliği Öğrencisi
+    Hedefler: Sınav haftasında yer bulma derdinden kurtulmak, boş masaları hızlıca görmek.
+    Pain Points: Sayfanın karmaşık olması, telefon uyumsuzluğu, yanlış rezervasyonlar.
+    Senaryo: Efekan sabah dersten çıkıp telefonundan 12 numaralı masayı görüp 
+             hızlıca rezerve eder ve kütüphaneye gider.
+-->
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>lab 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Kütüphane Rezervasyon Sistemi</div>
+            <ul class="nav-links">
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Rezervasyonlarım</a></li>
+                <li><a href="#">Kurallar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Tarih, saat ve alan türü seçin.</h1>
+            <p>Çalışma alanınızı ayırın!</p>
+        </section>
+
+        <section class="filter-panel">
+            <div class="filter-group">
+                <label for="date">Tarih</label>
+                <input type="date" id="date">
+            </div>
+            <div class="filter-group">
+                <label for="time">Saat Aralığı</label>
+                <select id="time">
+                    <option value="09-12">09:00 - 12:00</option>
+                    <option value="12-15">12:00 - 15:00</option>
+                    <option value="15-18">15:00 - 18:00</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="type">Alan Türü</label>
+                <select id="type">
+                    <option value="desk">Bireysel Masa</option>
+                    <option value="room">Grup Odası</option>
+                </select>
+            </div>
+            <button class="btn-apply">Uygula</button>
+        </section>
+
+        <section class="results-grid">
+            <div class="card">
+                <h3>Bireysel Masa</h3>
+                <p>Kapasite: 1 Kişi</p>
+                <p>Uygun Saatler: 10:00 - 14:00</p>
+                <button class="btn-reserve">Rezervasyon Yap</button>
+            </div>
+            <div class="card">
+                <h3>Grup Odası 1</h3>
+                <p>Kapasite: 6 Kişi</p>
+                <p>Uygun Saatler: 12:00 - 16:00</p>
+                <button class="btn-reserve">Rezervasyon Yap</button>
+            </div>
+            <div class="card">
+                <h3>Bireysel Masa 2</h3>
+                <p>Kapasite: 1 Kişi</p>
+                <p>Uygun Saatler: 09:00 - 18:00</p>
+                <button class="btn-reserve">Rezervasyon Yap</button>
+            </div>
+            <div class="card">
+                <h3>Grup Odası 2</h3>
+                <p>Kapasite: 4 Kişi</p>
+                <p>Uygun Saatler: 14:00 - 17:00</p>
+                <button class="btn-reserve">Rezervasyon Yap</button>
+            </div>
+        </section>
+
+        <section class="rules">
+            <h2>Rezervasyon Kuralları</h2>
+            <ul>
+                <li>Rezervasyon saatinden 15 dakika önce gelmeyenlerin kaydı silinir.</li>
+                <li>Grup odaları en az 3 kişi tarafından kullanılmalıdır.</li>
+                <li>Çalışma alanlarında yüksek sesle konuşmak yasaktır.</li>
+                <li>Aynı gün içerisinde en fazla 4 saat rezervasyon yapılabilir.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>İletişim: efecelik4207@gmail.com | Tel: 0553 137 2139</p>
+            <div class="socials">
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://twitter.com/">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

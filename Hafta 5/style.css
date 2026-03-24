@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo span {
+    color: lightblue;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    padding-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.filter-panel {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: white;
+}
+
+
+.results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+.rules {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
