@@ -7,6 +7,6 @@ console.log(ogrenciMi);
 
 console.log(`Merhaba, benim adım ${isim}, yaşım ${yas} ve öğrenci mi? ${ogrenciMi}`);
 
-console.log(typeof isim);    // string
-console.log(typeof yas);     // number
-console.log(typeof ogrenciMi); // boolean
+console.log(typeof isim);
+console.log(typeof yas);
+console.log(typeof ogrenciMi); 

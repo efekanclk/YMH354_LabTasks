@@ -1,7 +1,7 @@
 
 const ogrenci = {
-  isim: "Caner",
-  yas: 21,
+  isim: "efekan",
+  yas: 20,
   bolum: "Yazılım Mühendisliği",
   notlar: [70, 85, 60, 90]
 };
