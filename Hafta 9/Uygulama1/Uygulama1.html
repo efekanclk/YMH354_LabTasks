@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Uygulama1</title>
+    <link rel="stylesheet" href="Uygulama1.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Görev Panosu</h2>
+
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Yeni görev girin...">
+            <button id="addTaskBtn">Görev Ekle</button>
+            <div id="errorMsg" class="error-hidden">Lütfen bir görev giriniz!</div>
+        </div>
+
+        <div class="board">
+            <div class="column" id="col-todo">
+                <h3>Yapılacak (<span class="task-count">0</span>)</h3>
+                <div class="task-list" id="list-todo"></div>
+            </div>
+
+            <div class="column" id="col-progress">
+                <h3>Devam Ediyor (<span class="task-count">0</span>)</h3>
+                <div class="task-list" id="list-progress"></div>
+            </div>
+
+            <div class="column" id="col-done">
+                <h3>Tamamlandı (<span class="task-count">0</span>)</h3>
+                <div class="task-list" id="list-done"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Uygulama1.js"></script>
+</body>
+
+</html>
