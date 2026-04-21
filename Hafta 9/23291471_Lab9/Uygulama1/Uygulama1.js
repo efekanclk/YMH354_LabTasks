@@ -7,10 +7,23 @@ const listTodo = document.getElementById('list-todo');
 const listProgress = document.getElementById('list-progress');
 const listDone = document.getElementById('list-done');
 
+// Sütun sıralamasını tutan dizi (İleri/Geri işlemleri için)
 const columns = [listTodo, listProgress, listDone];
 
-// 1. Görev Ekleme İşlemi
+// 1. Görev Ekleme İşlemi (Butona Tıklama ile)
 addTaskBtn.addEventListener('click', () => {
+    addTask();
+});
+
+// YENİ EKLENEN KISIM: Input içindeyken "Enter" tuşuna basıldığında
+taskInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        addTask();
+    }
+});
+
+// Hem buton hem de Enter tuşu için ortak görev ekleme fonksiyonu
+function addTask() {
     const taskText = taskInput.value.trim();
 
     // 5. Boş kart kontrolü ve DOM üzerinden hata mesajı
@@ -26,7 +39,7 @@ addTaskBtn.addEventListener('click', () => {
     createTaskCard(taskText);
     taskInput.value = "";
     updateCounts(); // Sayaçları güncelle
-});
+}
 
 // Kart oluşturma fonksiyonu
 function createTaskCard(text) {

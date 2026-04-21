@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Uygulama 2</title>
+    <link rel="stylesheet" href="Uygulama2.css">
+</head>
+
+<body>
+    <div class="controls">
+        <h3>Koordinatlar: <span id="coords">X: 0, Y: 0</span></h3>
+        <h3>Hız: <span id="speedDisplay">0</span> km/h</h3>
+        <button id="resetBtn">Başlangıç Konumuna Sıfırla</button>
+    </div>
+
+    <div class="work-area" id="workArea">
+        <div class="draggable-panel" id="dragPanel">
+            <svg class="dvd-logo" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+                <ellipse cx="50" cy="40" rx="45" ry="30" stroke="currentColor" stroke-width="5" fill="none"/>
+                <text x="50" y="52" font-family="Arial, sans-serif" font-weight="bold" font-size="24" text-anchor="middle" fill="currentColor">DVD</text>
+                <path d="M25 65 L75 65 M25 70 L75 70" stroke="currentColor" stroke-width="2"/>
+                <text x="50" y="85" font-family="Arial, sans-serif" font-weight="bold" font-size="10" text-anchor="middle" fill="currentColor">VIDEO</text>
+            </svg>
+        </div>
+    </div>
+
+    <script src="Uygulama2.js"></script>
+</body>
+
+</html>
